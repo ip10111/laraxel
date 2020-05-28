@@ -1,0 +1,31 @@
+{
+    "name": "xilouet/laraxel",
+    "type": "package",
+    "authors": [
+        {
+            "name": "Indra Prahasta",
+            "email": "indra.prahasta@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=7.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "Xilouet\\Laraxel\\": "app/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Xilouet\\Laraxel\\Test\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Xilouet\\Laraxel\\Providers\\ServiceProvider"
+            ]
+        }
+    }
+}
